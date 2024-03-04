@@ -36,12 +36,12 @@ These packages can be installed manually if needed, in one go, by running the fo
 
 Core packages:
   ```bash
-  npm install --save-peer --save-exact @eslint/eslintrc eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-promise globals
+  npm install --save --save-exact @eslint/eslintrc eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-promise globals
   ```
 
 All Optional packages:
   ```bash
-  npm install --save-dev eslint-plugin-deprecation eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-simple-import-sort eslint-plugin-typescript-sort-keys eslint-plugin-jest eslint-plugin-vitest typescript typescript-eslint
+  npm install --save --save-exact eslint-plugin-deprecation eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-simple-import-sort eslint-plugin-typescript-sort-keys eslint-plugin-jest eslint-plugin-vitest typescript typescript-eslint
   ```
 
 ### Usage
