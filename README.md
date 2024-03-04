@@ -12,7 +12,7 @@ Check that `@born3am/prettier` package is properly installed and configured. `Pr
   npm install --save-dev @born3am/eslint-config
   ```
 
-The package `@born3am/eslint-config` includes the following dependencies:
+The package `@born3am/eslint-config` includes the following **dev-dependencies**:
 
   ```bash
   @eslint/eslintrc
@@ -32,16 +32,13 @@ The package `@born3am/eslint-config` includes the following dependencies:
   typescript
   typescript-eslint
   ```
-These packages can be installed manually if needed, in one go, by running the following command:
-
-Core packages:
+... and the following **peer-dependencies**:
   ```bash
-  npm install --save --save-exact @eslint/eslintrc eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-promise globals
-  ```
-
-All Optional packages:
-  ```bash
-  npm install --save --save-exact eslint-plugin-deprecation eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-simple-import-sort eslint-plugin-typescript-sort-keys eslint-plugin-jest eslint-plugin-vitest typescript typescript-eslint
+  jest
+  prettier
+  typescript
+  vitest
+  vite-plugin-eslint
   ```
 
 ### Usage
