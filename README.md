@@ -2,7 +2,7 @@
 ESlint "Flat" configuration for Born3am Projects
 
 ### Pre-requisites
-Check that `@born3am/prettier` package is properly installed and configured. `Prettier` is integrated with `eslint` and eslint will fail if it does not find the Prettier package and the prettier config file. Further details about Prettier can be found [here](https://github.com/Born3am Projects/prettier-config).
+Check that `@born3am/prettier` package is properly installed and configured. `Prettier` is integrated with `eslint` and eslint will fail if it does not find the Prettier package and the prettier config file. Further details about Prettier can be found [here][(https://github.com/Born3am Projects/prettier-config](https://github.com/born3am/prettier-config-born3am)).
 
 ### Installation
 1) Create an empty file `.eslint.config.js` in the root of your project.
