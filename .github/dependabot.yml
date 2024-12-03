@@ -18,7 +18,7 @@ updates:
       minor-updates:
         applies-to: version-updates
         update-types:
-          - "minor" # Group all minor updates together
+          - "patch" # Group all patch updates together
     versioning-strategy: increase-if-necessary
     ignore:
       - dependency-name: "*"
