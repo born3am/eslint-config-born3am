@@ -1,6 +1,6 @@
 {
   "name": "@born3am/eslint-config",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "ESLint configuration for Born3am Projects",
   "main": "index.js",
   "type": "module",

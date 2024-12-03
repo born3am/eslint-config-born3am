@@ -4,8 +4,7 @@ import globals from 'globals';
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const eslintConfigBase = {
-  ignores: ['.DS_Store', '.env.*', 'bin/**/*', 'build/**/*', 'cache/**/*', 'dist/**/*', 'jest.config.js', 'lib/**/*', 'node_modules/**/*', 'vendor/**/*', 'package-lock.json'],
-
+  
   languageOptions: {
     ecmaVersion: 'latest',
     globals: {
