@@ -4,9 +4,6 @@ on:
   pull_request:
     paths:
       - '**/*.js'
-      - '**/*.ts'
-  push:
-    branches: [main]
 
 jobs:
   analyze:
