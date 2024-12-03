@@ -2,8 +2,11 @@ import eslintPluginPromise from 'eslint-plugin-promise';
 
 /** @type {import('eslint').Linter.FlatConfig} */
 export const eslintConfigJs = {
-  files: ['**/*.{mjs,cjs,js,jsx}'],
-  ignores: ['.DS_Store', '.env.*', 'bin/**/*', 'build/**/*', 'cache/**/*', 'dist/**/*', 'jest.config.js', 'lib/**/*', 'node_modules/**/*', 'package-lock.json'],
+  files: ['**/*.{mjs,cjs,js,jsx}',
+    '!dist/**/*',
+    '!node_modules/**/*',
+    '!vendor/**/*',
+  ],
 
   plugins: {
     promise: eslintPluginPromise,
