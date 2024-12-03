@@ -1,6 +1,6 @@
 {
   "name": "@born3am/eslint-config",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "ESLint configuration for Born3am Projects",
   "main": "index.js",
   "type": "module",
@@ -31,7 +31,7 @@
     "eslint-plugin-typescript-sort-keys": "3.2.0",
     "eslint-plugin-vitest": "0.3.22",
     "globals": "14.0.0",
-    "typescript-eslint": "7.1.0"
+    "typescript-eslint": "7.18.0"
   },
   "peerDependencies": {
     "jest": ">=29.7.0",
