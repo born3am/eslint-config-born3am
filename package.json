@@ -1,6 +1,6 @@
 {
   "name": "@born3am/eslint-config",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "ESLint configuration for Born3am Projects",
   "main": "index.js",
   "type": "module",
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/born3am/eslint-config#readme",
   "dependencies": {
     "@eslint/eslintrc": "3.2.0",
-    "eslint": "^9.0.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "^28.9.0",
