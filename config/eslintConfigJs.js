@@ -7,6 +7,7 @@ export const eslintConfigJs = {
     '!node_modules/**/*',
     '!vendor/**/*',
   ],
+  ignores: ['.DS_Store', '.env.*', 'bin/**/*', 'build/**/*', 'cache/**/*', 'dist/**/*', 'jest.config.js', 'lib/**/*', 'node_modules/**/*', 'package-lock.json'],
 
   plugins: {
     promise: eslintPluginPromise,
