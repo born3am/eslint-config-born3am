@@ -5,7 +5,7 @@ ESlint "Flat" configuration for Born3am Projects
 Check that `@born3am/prettier` package is properly installed and configured. `Prettier` is integrated with `eslint` and eslint will fail if it does not find the Prettier package and the prettier config file. Further details about Prettier can be found [here][(https://github.com/Born3am Projects/prettier-config](https://github.com/born3am/prettier-config-born3am)).
 
 ### Installation
-1) Create an empty file `.eslint.config.js` in the root of your project.
+1) Create an empty file `eslint.config.js` in the root of your project.
 
 2) Install the `@born3am/eslint-config` package as a dev dependency.
   ```bash
@@ -43,7 +43,7 @@ The package `@born3am/eslint-config` includes the following **dev-dependencies**
 
 ### Usage
 
-There are three primary preset configuration bundles, each tailored to a specific project type. Each configuration is an independent package module that can be imported and used separately in the `.eslint.config.js` file, as follows:
+There are three primary preset configuration bundles, each tailored to a specific project type. Each configuration is an independent package module that can be imported and used separately in the `eslint.config.js` file, as follows:
 1) **WebApps Projects**
 Include eslint configs for `React`, `Javascript` and `TypeScript` files. The testing framework used in this context is `Vitest`.
 
@@ -60,7 +60,7 @@ Include eslint configs for `React`, `Javascript` and `TypeScript` files. The tes
   ];
   ```
 
-- Usage in `.eslint.config.js`:
+- Usage in `eslint.config.js`:
   ```js
   // eslint.config.js
   import { eslintConfigWeb } from '@born3am/eslint-config'
@@ -84,7 +84,7 @@ Include eslint configs for `Javascript` and `TypeScript` files. The testing fram
   ];
   ```
 
-- Usage in `.eslint.config.js`:
+- Usage in `eslint.config.js`:
   ```js
   // eslint.config.js
   import { eslintConfigNode } from '@born3am/eslint-config'
@@ -106,7 +106,7 @@ Include eslint configs for `Javascript` and `Google Apps Script` files. The test
     ];
   ```
 
-- Usage in `.eslint.config.js`:
+- Usage in `eslint.config.js`:
   ```js
   // eslint.config.js
   import { eslintConfigAppsScript } from '@born3am/eslint-config'
@@ -138,7 +138,7 @@ Regardless of the file type, the fix script should always handle all files.
 ### Maintenance
 To check for deprecated rules, resolve conflicts, update rules, or gain a better understanding of the rules, you can utilize the [eslint-flat-config-viewer](https://github.com/antfu/eslint-flat-config-viewer) package.
 
-Please note, this package isn't installed as a dependency and is solely used for rule viewing. As a standalone package, it can be executed without installation. To view the rules in a browser window, execute the following command in your terminal, making sure you're in the same directory as the `.eslint.config.js` file:
+Please note, this package isn't installed as a dependency and is solely used for rule viewing. As a standalone package, it can be executed without installation. To view the rules in a browser window, execute the following command in your terminal, making sure you're in the same directory as the `eslint.config.js` file:
 ```bash
 npx eslint-flat-config-viewer
 ```
