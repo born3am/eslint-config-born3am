@@ -1,4 +1,3 @@
-import eslintPluginDeprecation from 'eslint-plugin-deprecation';
 import tsPluginSortKeys from 'eslint-plugin-typescript-sort-keys';
 import tsEslint from 'typescript-eslint';
 
@@ -12,15 +11,11 @@ export const eslintConfigTs = {
   },
 
   plugins: {
-    deprecation: eslintPluginDeprecation,
     '@typescript-eslint': tsEslint.plugin,
     'typescript-sort-keys': tsPluginSortKeys,
   },
 
   rules: {
-    // Rules from "deprecation" to report usage of deprecated code.
-    'deprecation/deprecation': 'error',
-
     // Rules from "typescript-sort-keys"
     // https://github.com/infctr/eslint-plugin-typescript-sort-keys
     'typescript-sort-keys/interface': 'error',
@@ -31,6 +26,7 @@ export const eslintConfigTs = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
+    "@typescript-eslint/no-deprecated": "error",
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'warn',
