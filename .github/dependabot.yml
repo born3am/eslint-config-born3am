@@ -4,6 +4,7 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    target-branch: "dev" # Ensures 'main' only receives updates from 'dev' and that after, 'main' will also get a new version for npm.
     open-pull-requests-limit: 5
     schedule:
       interval: "weekly"
