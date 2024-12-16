@@ -1,5 +1,6 @@
 version: 2
 updates:
+  - package-ecosystem: "npm"
     directory: '/' # Look for package.json in the root directory
     open-pull-requests-limit: 5
     schedule:
@@ -27,4 +28,3 @@ updates:
         - 'legacy' # Deprecated versions
         - 'next' # Future versions not finalized
         - 'nightly' # Daily unstable builds
-
