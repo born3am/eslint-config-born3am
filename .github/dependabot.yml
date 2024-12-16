@@ -2,8 +2,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
+  - directory: '/' # Look for package.json in the root directory
+    package-ecosystem: 'npm'
     open-pull-requests-limit: 5
     schedule:
       interval: 'monthly'
@@ -25,11 +25,11 @@ updates:
     ignore:
       - dependency-name: '*'
         versions:
-          - 'alpha'
-          - 'beta'
-          - 'canary'
-          - 'dev'
-          - 'experimental'
-          - 'legacy'
-          - 'next'
-          - 'nightly'
+          - 'alpha' # Unstable early-stage development versions
+          - 'beta' # Pre-production versions
+          - 'canary' # Frequently updated testing versions
+          - 'dev' # Developer-only versions
+          - 'experimental' # Experimental versions with high instability
+          - 'legacy' # Deprecated versions
+          - 'next' # Future versions not finalized
+          - 'nightly' # Daily unstable builds
