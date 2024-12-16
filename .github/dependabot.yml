@@ -1,6 +1,6 @@
 version: 2
 updates:
-    directory: '/' # Look for package.json in the root directory
+  - directory: '/' # Look for package.json in the root directory
     open-pull-requests-limit: 5
     schedule:
       interval: 'daily'
@@ -19,12 +19,11 @@ updates:
     ignore:
       - dependency-name: '*' # Ignore all pre-release versions for stability
         versions:
-        - 'alpha' # Unstable early-stage development versions
-        - 'beta' # Pre-production versions
-        - 'canary' # Frequently updated testing versions
-        - 'dev' # Developer-only versions
-        - 'experimental' # Experimental versions with high instability
-        - 'legacy' # Deprecated versions
-        - 'next' # Future versions not finalized
-        - 'nightly' # Daily unstable builds
-        
+          - 'alpha' # Unstable early-stage development versions
+          - 'beta' # Pre-production versions
+          - 'canary' # Frequently updated testing versions
+          - 'dev' # Developer-only versions
+          - 'experimental' # Experimental versions with high instability
+          - 'legacy' # Deprecated versions
+          - 'next' # Future versions not finalized
+          - 'nightly' # Daily unstable builds
