@@ -1,8 +1,5 @@
 version: 2
 updates:
-  # Version updates for `dev` branch
-  - package-ecosystem: 'npm'
-    target-branch: 'dev' # Ensures 'main' only receives updates from 'dev', so 'main' reflects all dependency updates and the new package version when merged (useful for npm)
     directory: '/' # Look for package.json in the root directory
     open-pull-requests-limit: 5
     schedule:
@@ -31,16 +28,3 @@ updates:
         - 'next' # Future versions not finalized
         - 'nightly' # Daily unstable builds
 
-  # Security updates for `main` branch
-  - package-ecosystem: 'npm'
-    directory: '/' # Look for package.json in the root directory
-    schedule:
-      interval: 'daily'
-      time: '11:00'
-      timezone: 'Europe/Berlin'
-    labels:
-      - 'security' # Add a "security" label to these PRs
-    allow:
-      - dependency-type: 'direct' # Only direct dependencies for security updates
-    target-branch: 'main' # Only apply security updates to `main`
-    versioning-strategy: lockfile-only # Keep version in package.json unchanged unless it's a security update
