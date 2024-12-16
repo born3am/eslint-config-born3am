@@ -27,4 +27,4 @@ updates:
         - 'legacy' # Deprecated versions
         - 'next' # Future versions not finalized
         - 'nightly' # Daily unstable builds
-
+        
