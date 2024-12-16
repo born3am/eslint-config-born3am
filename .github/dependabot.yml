@@ -41,4 +41,6 @@ updates:
     labels:
       - 'security' # Add a "security" label to these PRs
     allow:
-      - dependency-type: 'direct' # Prioritize direct dependencies for security updates
+      - dependency-type: 'direct' # Only direct dependencies for security updates
+    target-branch: 'main' # Only apply security updates to `main`
+    versioning-strategy: lockfile-only # Keep version in package.json unchanged unless it's a security update
