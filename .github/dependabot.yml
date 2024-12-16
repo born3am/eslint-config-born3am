@@ -21,15 +21,15 @@ updates:
     versioning-strategy: increase-if-necessary # Only bump version if required for compatibility or security
     ignore:
       - dependency-name: '*' # Ignore all pre-release versions for stability
-    versions:
-      - 'alpha' # Unstable early-stage development versions
-      - 'beta' # Pre-production versions
-      - 'canary' # Frequently updated testing versions
-      - 'dev' # Developer-only versions
-      - 'experimental' # Experimental versions with high instability
-      - 'legacy' # Deprecated versions
-      - 'next' # Future versions not finalized
-      - 'nightly' # Daily unstable builds
+        versions:
+        - 'alpha' # Unstable early-stage development versions
+        - 'beta' # Pre-production versions
+        - 'canary' # Frequently updated testing versions
+        - 'dev' # Developer-only versions
+        - 'experimental' # Experimental versions with high instability
+        - 'legacy' # Deprecated versions
+        - 'next' # Future versions not finalized
+        - 'nightly' # Daily unstable builds
 
   # Security updates for `main` branch
   - package-ecosystem: 'npm'
