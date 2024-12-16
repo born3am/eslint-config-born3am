@@ -1,6 +1,7 @@
 version: 2
 updates:
   - directory: '/' # Look for package.json in the root directory
+    package-ecosystem: 'npm'
     open-pull-requests-limit: 5
     schedule:
       interval: 'daily'
