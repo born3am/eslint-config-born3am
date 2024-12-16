@@ -29,7 +29,7 @@
     "eslint-plugin-typescript-sort-keys": "3.3.0",
     "eslint-plugin-vitest": "0.5.4",
     "globals": "15.13.0",
-    "typescript-eslint": "8.17.0"
+    "typescript-eslint": "8.18.0"
   },
   "peerDependencies": {
     "jest": ">=29.7.0",
