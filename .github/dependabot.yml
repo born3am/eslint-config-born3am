@@ -1,9 +1,7 @@
 version: 2
 updates:
-  # Version updates for `dev` branch
-  - package-ecosystem: 'npm'
-    target-branch: 'dev' # Ensures 'main' only receives updates from 'dev', so 'main' reflects all dependency updates and the new package version when merged (useful for npm)
-    directory: '/' # Look for package.json in the root directory
+  - directory: '/' # Look for package.json in the root directory
+    package-ecosystem: 'npm'
     open-pull-requests-limit: 5
     schedule:
       interval: 'daily'
@@ -22,23 +20,11 @@ updates:
     ignore:
       - dependency-name: '*' # Ignore all pre-release versions for stability
         versions:
-        - 'alpha' # Unstable early-stage development versions
-        - 'beta' # Pre-production versions
-        - 'canary' # Frequently updated testing versions
-        - 'dev' # Developer-only versions
-        - 'experimental' # Experimental versions with high instability
-        - 'legacy' # Deprecated versions
-        - 'next' # Future versions not finalized
-        - 'nightly' # Daily unstable builds
-
-  # Security updates for `main` branch
-  - package-ecosystem: 'npm'
-    directory: '/' # Look for package.json in the root directory
-    schedule:
-      interval: 'daily'
-      time: '11:00'
-      timezone: 'Europe/Berlin'
-    labels:
-      - 'security' # Add a "security" label to these PRs
-    allow:
-      - dependency-type: 'direct' # Prioritize direct dependencies for security updates
+          - 'alpha' # Unstable early-stage development versions
+          - 'beta' # Pre-production versions
+          - 'canary' # Frequently updated testing versions
+          - 'dev' # Developer-only versions
+          - 'experimental' # Experimental versions with high instability
+          - 'legacy' # Deprecated versions
+          - 'next' # Future versions not finalized
+          - 'nightly' # Daily unstable builds
