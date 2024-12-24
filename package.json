@@ -24,12 +24,12 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react": "7.37.3",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-typescript-sort-keys": "3.3.0",
     "eslint-plugin-vitest": "0.5.4",
     "globals": "15.14.0",
-    "typescript-eslint": "8.18.1"
+    "typescript-eslint": "8.18.2"
   },
   "peerDependencies": {
     "jest": ">=29.7.0",
