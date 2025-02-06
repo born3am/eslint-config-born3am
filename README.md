@@ -18,7 +18,6 @@ The package `@born3am/eslint-config` includes the following **dev-dependencies**
   @eslint/eslintrc
   eslint
   eslint-config-prettier
-  eslint-plugin-deprecation
   eslint-plugin-import
   eslint-plugin-jsx-a11y
   eslint-plugin-prettier
